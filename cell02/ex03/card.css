@@ -1,0 +1,84 @@
+/* General reset */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Profile card */
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+.card-title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Invisible table (used just for alignment) */
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.profile-table td {
+  border: none;
+  padding: 10px;
+}
+
+/* Profile picture */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+}
+
+/* Login and description */
+.login {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #333;
+}
+.description {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Social icons */
+.socials img {
+  width: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.socials img:hover {
+  transform: scale(1.1);
+}
+
+/* Contact button */
+.contact-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.contact-btn:hover {
+  background-color: #2980b9;
+}
