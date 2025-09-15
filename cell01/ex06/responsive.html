@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Table</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;          /* remove default page margins */
+  }
+  table {
+    width: 100%;        /* take the full browser width */
+    height: 100%;       /* take the full browser height */
+    border-collapse: collapse;
+    table-layout: fixed;/* columns stay equal width */
+  }
+  td {
+    width: 50%;         /* each column covers half the width */
+    height: 100%;
+    padding: 0;
+    text-align: center; /* optional, center content */
+    vertical-align: middle;
+    font-size: 3rem;
+    color: darkmagenta;
+  }
+  .left  { background-color: pink; }
+  .right { background-color: lightgreen; }
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td class="left">FullHouse Pink</td>
+    <td class="right">FullHouse Green</td>
+  </tr>
+</table>
+
+</body>
+</html>
