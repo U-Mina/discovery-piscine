@@ -1,0 +1,40 @@
+body, html
+{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+}
+
+.para
+{
+    height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(129, 107, 122);
+}
+
+.para1
+{
+    background-image: url(img1.png);
+}
+
+.para2
+{
+    background-image: url(img2.jpg);
+}
+
+.content-block
+{
+    background-color: rgb(5, 1, 1);
+    color: rgb(245, 242, 242);
+    text-align: center;
+    padding: 130px 20px;
+}
