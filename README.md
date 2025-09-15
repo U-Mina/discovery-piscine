@@ -1,11 +1,10 @@
-# discovery-piscine
-# Not for Any External Usage
-# All Copyright reserved
+# Discovery-Piscine
+## Not for Any External Usage
+## All Copyright reserved
 
+### A 42 school piscine for web development
 
-a 42 school piscine for web development
-
-Tech Stack:
-- HTML
-- CSS
-- JavaScript
+#### Tech Stack:
+#### - HTML
+#### - CSS
+#### - JavaScript
