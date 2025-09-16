@@ -8,6 +8,6 @@ function createRandomClr() {
     return clr;
 }
 
-document.getElementById("colorBtn").addEventListener("click", function() {
+document.getElementById("colorButton").addEventListener("click", function() {
     document.body.style.backgroundColor = createRandomClr();
 });

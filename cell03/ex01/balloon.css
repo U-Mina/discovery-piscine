@@ -1,0 +1,16 @@
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+#ballonBtn
+{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	border-radius: 50%;
+	cursor: pointer;
+}
