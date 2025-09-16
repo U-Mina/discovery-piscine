@@ -1,14 +1,13 @@
 body, html
 {
-    margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.para
+.para1, .para2
 {
-    height: 100vh;
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,22 +17,26 @@ body, html
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: rgb(129, 107, 122);
 }
 
 .para1
 {
-    background-image: url(img1.png);
+    background-image: url(https://images.nintendolife.com/c95b0fb2a1e47/fireemblemawakening.large.jpg);
+    min-height: 100%;
+    color: white;
 }
 
 .para2
 {
-    background-image: url(img2.jpg);
+    background-image: url(https://img-eshop.cdn.nintendo.net/i/e815b3fc125676ccb08c809b2e6161e725d4b14378c3c15d960908572578fb61.jpg);
+    min-height: 100%;
+    color: rgb(69, 59, 45);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .content-block
 {
-    background-color: rgb(5, 1, 1);
+    background-color: black;
     color: rgb(245, 242, 242);
     text-align: center;
     padding: 130px 20px;
