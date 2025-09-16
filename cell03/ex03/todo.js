@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const textWidow = prompt("Your new To-do: "); // pop-up text window on click
 
         if (textWidow !== null && textWidow.trim() !== '') {
-            console.log('New todo added: ', textWidow.trim());
             creteTodo(textWidow.trim());
             savaTodo();
         }
