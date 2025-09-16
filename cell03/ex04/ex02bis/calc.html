@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Simple Calculator</title>
+<title>Simple Calculator with JQuery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 	<h2>Try this Calculator</h2>
 
-	<form id="calForm" onsubmit="return false;">
+	<form id="calForm">
 		<label for="leftOp">Operand 1:</label>
 		<input type="number" id="leftOp" name="op1" min="0"><br><br>
 		
@@ -25,62 +26,68 @@
 		<label for="rightOp">Operand 2:</label>
 		<input type="number" id="rightOp" name="op2" min="0"><br><br>
 
-		<button type="button" onclick="calcul()">Try me!</button>
+		<button type="submit">Try me!</button>
 	</form>
 
 	<script>
-		// func go inside
-		function calcul() {
-			const left = document.getElementById('leftOp').value.trim();
-			const right = document.getElementById('rightOp').value.trim();
-			const oper = document.querySelector('input[name="ops"]:checked');
+		$(document).ready(function() {
+			$('#calForm').on('submit', function(event) {
+				event.preventDefault(); //this take replace of onsubmit="return fale"
 
-			if (!oper) {
-				alert('No operator selected!');
-				return ;
-			}
+				const left = $('#leftOp').val();
+				const right = $('#rightOp').val();
+				const oper = $('input[name="ops"]:checked').val();
 
-			const a = Number(left);
-			const b = Number(right);
-			const op = oper.value;
-			let res;
+				if (!oper) {
+					alert('No operator selected!');
+					return ;
+				}
 
-			// error handle
-			if ((op === '/' || op === '%') && b === 0) {
-				alert("It's over 9000!");
-				console.log("It's over 9000!");
-				return ;
-			}
-			if (a < 0 || b < 0 ) {
-				alert('Error: :(');
-				return ;
-			}
-			// NOTE: if use regex format, can be more accurately checked: /^\d+$/
+				const a = Number(left);
+				const b = Number(right);
+				let res;
 
-			switch (op) {
-				case '+':
-					res = a + b;
-					break ;
-				case '-':
-					res = a - b;
-					break ;
-				case '*':
-					res = a * b;
-					break ;
-				case '/':
-					res = a / b;
-					break ;
-				case '%':
-					res = a % b;
-					break ;
-			}
-			alert(res);
-			console.log(res);
-		}
+				if (isNaN(a) || isNaN(b)) {
+					alert('Not valid Number.');
+					return ;
+				}
 
-		setInterval(() => {
-			alert('Please, use me...');
-		}, 30000);
+				if ((oper === '/' || oper === '%') && b === 0) {
+					alert("It's over 9000!");
+					console.log("It's over 9000!");
+					return ;
+				}
+
+				if (a < 0 || b < 0 ) {
+					alert('Error: :(');
+					return ;
+				}
+
+				switch (oper) {
+					case '+':
+						res = a + b;
+						break ;
+					case '-':
+						res = a - b;
+						break ;
+					case '*':
+						res = a * b;
+						break ;
+					case '/':
+						res = a / b;
+						break ;
+					case '%':
+						res = a % b;
+						break ;
+				}
+				alert(res);
+				console.log(res);
+			});
+
+			setInterval(() => {
+				alert('Please, use me...');
+			}, 30000);
+		});
 	</script>
 </body>
 

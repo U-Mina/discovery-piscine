@@ -4,7 +4,7 @@
 // $('.class') <== document.querySelectorAll('.class');
 // each() <== forEach()
 // textContent() <== text()
-
+// .on('click', ...) <== addEventListener()
 
 $(document).ready(function() {
     
