@@ -55,6 +55,62 @@ html {
     font-weight: 800;
 }
 
+.jslink {
+    color: #c7c1c1;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.jslink:hover {
+    color: #e3cd0bcf;
+    text-decoration:wavy;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.golink {
+    color: #c7c1c1;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.golink:hover {
+    color: #106fcecf;
+    text-decoration:underline;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.kotlinlink {
+    color: #c7c1c1;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.kotlinlink:hover {
+    color: #b320bacf;
+    text-decoration: blink;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.clink {
+    color: #c7c1c1;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.clink:hover {
+    color: #25a3ddcf;
+    text-decoration:overline;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
 /* .exp, .ski {
     text-align: center;
     color: white;
@@ -94,6 +150,7 @@ html {
     text-shadow: 2px 1px 3px rgba(0,0,0,0.6);
 }
 
+
 .getTouch {
     text-align: center;
     border-radius: 12px;
@@ -128,7 +185,7 @@ html {
 .resume {
     background-image: url(https://images.pexels.com/photos/3001996/pexels-photo-3001996.jpeg?cs=srgb&dl=pexels-maumascaro-3001996.jpg&fm=jpg);
     background-size: cover;
-    animation: gradient 40s ease infinite;
+    animation: gradient 60s ease infinite;
     padding-top: 4rem;
     padding-bottom: 4rem;
     /* opacity: 0.5; */
