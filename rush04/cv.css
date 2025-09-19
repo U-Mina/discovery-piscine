@@ -1,0 +1,80 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f8f9fa;
+}
+
+html {
+    scroll-padding-top: 70px;
+    /* navi bar wont overlap */
+    scroll-behavior: smooth;
+}
+
+.section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.about-section {
+    text-align: center;
+    padding: 5rem 1rem;
+    color: white;
+    font-weight: 700;
+}
+
+.profilePic {
+    width: 111px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.profileName {
+    font-size: 2.5rem;
+}
+
+/* .resume {
+    background-image: ;
+    background-size: ;
+} */
+
+.prof {
+    color: white;
+}
+
+.exp, .ski {
+    text-align: center;
+    color: white;
+    padding: 5rem 1rem;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+
+.getTouch {
+    text-align: center;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    text-shadow: 1rem;
+    padding: 3rem 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.resume {
+    background-image: url(https://images.pexels.com/photos/3001996/pexels-photo-3001996.jpeg?cs=srgb&dl=pexels-maumascaro-3001996.jpg&fm=jpg);
+    background-size: cover;
+    animation: gradient 40s ease infinite;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    /* opacity: 0.5; */
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
