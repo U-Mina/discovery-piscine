@@ -11,3 +11,5 @@ function createRandomClr() {
 document.getElementById("colorButton").addEventListener("click", function() {
     document.body.style.backgroundColor = createRandomClr();
 });
+
+// $('#id').on('click', function() {

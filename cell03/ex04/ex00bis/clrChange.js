@@ -1,4 +1,6 @@
 // hex clr format
+const s = document.getElementById('btn');
+
 $(document).ready(function() {
     function createRandomClr() {
         const s = "0123456789ABCDEF";

@@ -4,6 +4,7 @@
 <title>Simple Calculator</title>
 </head>
 <body>
+	
 	<h2>Try this Calculator</h2>
 
 	<form id="calForm" onsubmit="return false;">
@@ -11,6 +12,7 @@
 		<input type="number" id="leftOp" name="op1" min="0"><br><br>
 		
 		<label>Operator:</label><br>
+		//checkbox
 		<input type="radio" id="plus" name="ops" value="+">
 		<label for="plus">+</label><br>
 		<input type="radio" id="minus" name="ops" value="-">
@@ -35,6 +37,16 @@
 			const right = document.getElementById('rightOp').value.trim();
 			const oper = document.querySelector('input[name="ops"]:checked');
 
+			// NOTE: if use regex format, can be more accurately checked: /^\d+$/
+			// grammar note: '//' escape; '^' start of STR; '\d' a digit(0-9);
+			// '+' one more of the prev (digit in this situation)
+			// '$' end of STR
+			// .test() -< returns TRUE or FALSE
+			if (!/^\d+$/.test(left) || !/^\d+$/.test(right)) {
+				alert('Error :(');
+				return ;
+			}
+
 			if (!oper) {
 				alert('No operator selected!');
 				return ;
@@ -51,15 +63,11 @@
 				console.log("It's over 9000!");
 				return ;
 			}
-			if (isNaN(a) || isNaN(b)) {
-				alert('Not valid Number.');
-				return ;
-			}
+			
 			if (a < 0 || b < 0 ) {
 				alert('Error: :(');
 				return ;
 			}
-			// NOTE: if use regex format, can be more accurately checked: /^\d+$/
 
 			switch (op) {
 				case '+':

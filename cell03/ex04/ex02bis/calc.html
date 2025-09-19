@@ -47,10 +47,15 @@
 				const b = Number(right);
 				let res;
 
-				if (isNaN(a) || isNaN(b)) {
-					alert('Not valid Number.');
+				if (!/^\d+$/.test(left) || !/^\d+$/.test(right)) {
+					alert('Error :(');
 					return ;
 				}
+
+				// if (isNaN(a) || isNaN(b)) {
+				// 	alert('Not valid Number.');
+				// 	return ;
+				// }
 
 				if ((oper === '/' || oper === '%') && b === 0) {
 					alert("It's over 9000!");

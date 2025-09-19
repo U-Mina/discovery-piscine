@@ -9,6 +9,8 @@
 $(document).ready(function() {
     
     const newButton = $('#newButton');
+    // const newButton = document.getElementById('newButton');
+
     const todoDiv = $('#ft_list');
 
     function savaTodo() {

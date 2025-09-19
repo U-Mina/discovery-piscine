@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     const newButton = document.getElementById('newButton');
+    // const nbt = $('#newButton');
     const todoDiv = document.getElementById('ft_list');
 
     function savaTodo() {
@@ -12,17 +13,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         const tasksJson = JSON.stringify(tasks);
-
+        console.log(tasksJson);
         document.cookie = "todoList=" + tasksJson;
+        console.log(document.cookie);
     }
 
     function creteTodo(taskText) {
         const newTodoDiv = document.createElement('div');
 
+
         // add to 'todo' class for style (the style in html)
         newTodoDiv.className = 'todo';
         newTodoDiv.textContent = taskText;
         todoDiv.prepend(newTodoDiv);
+        // postprend()
     }
 
     function loadTodo() {
@@ -45,7 +49,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (event.target.className === 'todo') {
             if (confirm('Are you sure you want to DELETE this todo?')) {
+                const s = event.target.textContent;
+                console.log(s);
                 event.target.remove();
+
                 // todoDiv.remove();
                 savaTodo();
             }
@@ -64,7 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
     loadTodo();
 });
 
-// NOTE" event: has an address (event.target) of where the 'clicl' comes from
+// NOTE" event: has an address (event.target) of where the 'click' comes from
 // so ,we can tell is it from 'newButton' (add more todo), or from 'todo' -> to remove cur-todo
 // event: parameter that the browser automatically gives to function whenever an event happens,
 // so on: function(event), we are setting up a var to catch that package of information the browser sends
+

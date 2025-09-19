@@ -1,17 +1,14 @@
-body
-{
+body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-.dropdown
-{
+.dropdown {
     position: absolute;
     display: inline-block;
 }
 
-.dp-btn
-{
-    width: 190px;
+.dp-btn {
+    width: 150px;
     height: 60px;
     position: relative;
     background-color: beige;
@@ -22,8 +19,7 @@ body
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-.dp-content
-{
+.dp-content {
     display: none;
     position: absolute;
     min-width: 160px;
@@ -31,25 +27,21 @@ body
     z-index: 1;
 }
 
-.dp-content a
-{
-    color: black;
+.dp-content a {
+    color: green;
     padding: 10px;
     text-decoration: none;
     display: block;
 }
 
-.dp-content a:hover
-{
+.dp-content a:hover {
     background-color: rgb(40, 214, 224);
 }
 
-.dropdown:hover .dp-content
-{
+.dropdown:hover .dp-content {
     display: block;
 }
 
-.dropdown:hover .dp-btn
-{
+.dropdown:hover .dp-btn {
     background-color: rgb(222, 238, 207);
 }
