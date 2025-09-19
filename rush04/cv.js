@@ -10,7 +10,3 @@ document.addEventListener('DOMContentLoaded', function () {
     
 });
 
-
-    // If the navigation bar exists, create a new Bootstrap ScrollSpy instance.
-    // This will automatically update the nav links to an "active" state
-    // as you scroll past the different sections of your resume page.
