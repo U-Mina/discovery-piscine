@@ -55,13 +55,42 @@ html {
     color: #fff;
 }
 
+.seflintro, .jobtitle {
+    color: whitesmoke;
+    text-shadow: black;
+    font-style: oblique;
+    text-shadow: 2px 1px 3px rgba(0,0,0,0.6);
+}
+
 .getTouch {
     text-align: center;
     border-radius: 12px;
-    background-color: #f8f9fa;
-    text-shadow: 1rem;
-    padding: 3rem 1rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: whitesmoke;
+    /* opacity: 75%; */
+    background-color: rgba(245, 245, 245, 0.75);
+    text-shadow: 1.5rem;
+    padding: 1.6rem 0.6rem;
+    font-style: italic;
+    box-shadow: 0 4px 8px rgba(200, 196, 196, 0.2);
+    text-shadow: 2px 2px 4px rgba(72, 77, 122, 0.6);
+    max-width: 550px;
+    margin: 0 auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.btns {
+    color: lightgray;
+    padding: 0.7rem;
+    border: none;
+    /* background-color: lightgrey; */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* opacity: 60%; */
+    font-style: oblique;
+}
+
+.btns:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #333;
 }
 
 .resume {
