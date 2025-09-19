@@ -10,3 +10,20 @@ document.addEventListener('DOMContentLoaded', function () {
     
 });
 
+document.getElementById('ellenBtn').addEventListener('click', function(event) {
+    event.preventDefault();
+    const go = confirm("Unfortunatle, This is NOT a button to MARRIGE. CONTINUE??");
+    if (go) {
+        window.location.href = this.href;
+    }
+
+});
+
+document.getElementById('eryaBtn').addEventListener('click', function(event) {
+    event.preventDefault();
+    const go = confirm("YES! JOB secured!");
+    if (go) {
+        window.location.href = this.href;
+    }
+
+});

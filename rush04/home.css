@@ -32,10 +32,10 @@ body {
 }
 
 .profile-img {
-    width: 128px;
-    height: 128px;
+    width: 138px;
+    height: 138px;
     border-radius: 50%;
-    border: 4px solid #fff;
+    /* border: 4px solid #fff; */
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
 }
 
@@ -45,6 +45,7 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    /* border: none; */
 }
 
 .intro-text {
@@ -60,9 +61,30 @@ body {
 } */
 
 .cvBtn {
-    padding: 0.7rem 1.2rem;
-    font-weight: 500;
-    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    /* font-style: italic; */
+    padding: 0.6rem 1.1rem;
+    border: none;
+    font-weight: 400;
+    font-size: 22px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(172, 167, 167, 0.2);
+}
+
+.cvBtn:hover {
+    transform: scale(1.4);
+    border-radius: 70%;
+    box-shadow: 0 11px 16px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.btn-light.cvBtn:hover {
+    background-color: rgb(170, 174, 174);
+}
+
+.btn-secondary.cvBtn:hover {
+    background-color: white;
 }
 
 .button-goup {

@@ -58,7 +58,8 @@ html {
 .seflintro, .jobtitle {
     color: whitesmoke;
     text-shadow: black;
-    font-style: oblique;
+    /* font-style: oblique; */
+    font-style: italic;
     text-shadow: 2px 1px 3px rgba(0,0,0,0.6);
 }
 
