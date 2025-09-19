@@ -5,7 +5,7 @@ body {
 .homeBg {
     background-image: url(https://cdn.mos.cms.futurecdn.net/ixVt82uzEVx6XJR3kbAucd.jpg);
     background-size: cover;
-    animation: gradient 15s ease infinite;
+    animation: gradient 30s ease infinite;
 }
 
 @keyframes gradient {

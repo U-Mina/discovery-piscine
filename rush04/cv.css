@@ -41,11 +41,42 @@ html {
     color: white;
 }
 
+.kitchenlink {
+    color: #c7c1c1;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.kitchenlink:hover {
+    color: #e30b0bcf;
+    text-decoration:overline;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+/* .exp, .ski {
+    text-align: center;
+    color: white;
+    padding: 5rem 1rem;
+} */
+
+
 .exp, .ski {
+    background: rgba(255,255,255,0.05);
+    padding: 2rem;
+    border-radius: 16px;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
     text-align: center;
     color: white;
     padding: 5rem 1rem;
 }
+  
+.exp:hover, .ski:hover {
+  background: rgba(53, 46, 46, 0.639);
+  box-shadow: 0 0 25px rgba(255,255,255,0.4);
+}
+  
 
 .section-title {
     font-weight: 700;
@@ -68,13 +99,13 @@ html {
     border-radius: 12px;
     background-color: whitesmoke;
     /* opacity: 75%; */
-    background-color: rgba(245, 245, 245, 0.75);
+    background-color: rgba(174, 171, 171, 0.75);
     text-shadow: 1.5rem;
-    padding: 1.6rem 0.6rem;
+    padding: 1rem 0.6rem;
     font-style: italic;
     box-shadow: 0 4px 8px rgba(200, 196, 196, 0.2);
     text-shadow: 2px 2px 4px rgba(72, 77, 122, 0.6);
-    max-width: 550px;
+    max-width: 400px;
     margin: 0 auto;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
