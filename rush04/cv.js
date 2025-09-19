@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.getElementById('ellenBtn').addEventListener('click', function(event) {
     event.preventDefault();
-    const go = confirm("Unfortunatle, This is NOT a button to MARRIGE. CONTINUE??");
+    const go = confirm("Unfortunatle, This is NOT a button to MARRIGE.\nCONTINUE??");
     if (go) {
         window.location.href = this.href;
     }
@@ -21,7 +21,7 @@ document.getElementById('ellenBtn').addEventListener('click', function(event) {
 
 document.getElementById('eryaBtn').addEventListener('click', function(event) {
     event.preventDefault();
-    const go = confirm("YES! JOB secured!");
+    const go = confirm("YES!\nJOB secured!");
     if (go) {
         window.location.href = this.href;
     }
